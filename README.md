@@ -65,13 +65,14 @@ ifconfig #이더넷 확인
 
 파일생성 chmod 000 test(유저, 그룹, other) 
 
-권한은 7(4 - read, 2 – write, 1-실행) 
+ex )권한이 7 이라면 읽고 쓰고 실행 가능 (4 - read, 2 – write, 1-실행) 
 
-따라서 생성된 파일은 유저, 그룹, other 모두 아무런 권한이 없다. 
+따라서 생성된 파일은 유저, 그룹, other 모두 아무런 권한이 없다.
 
-유저는 읽고 실행 가능, 그룹은 읽기 가능, others는 전부 가능하게 하려면 
+ex )유저는 읽고 실행 가능, 그룹은 읽기 가능, others는 전부 가능하게 하려면 -> 
 
-->  chmod 547 test
+chmod 547 test
+
 
 ### 3. 디렉터리의 소유자를 변경하고자 할 때
 
@@ -95,6 +96,12 @@ vi –b XDServer.CF
 #	다시 실행 
 ```
 
+### 6. 서버 실행 확인시
+
+```
+netstat –an | grep 932 # 포트확인
+ps –ef | grep XDS 프로세스 확인
+```
 #### 2-1. 서버와 어플 사이의 통신(workers.properties)
 
 ```properties

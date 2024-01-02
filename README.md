@@ -100,7 +100,7 @@ vi –b XDServer.CF
 
 ```
 netstat –an | grep 932 # 포트확인
-ps –ef | grep XDS 프로세스 확인
+ps –ef | grep XDS #프로세스 확인
 ```
 
 ### 7. 연결 확인

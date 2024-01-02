@@ -102,6 +102,7 @@ vi –b XDServer.CF
 netstat –an | grep 932 # 포트확인
 ps –ef | grep XDS 프로세스 확인
 ```
+
 #### 2-1. 서버와 어플 사이의 통신(workers.properties)
 
 ```properties
